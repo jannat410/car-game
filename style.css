@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#game{
+    height: 500px;
+    width: 330px;
+    border: 2px solid black;
+    margin: 0 auto;
+    background: url(bg.jpg);
+    background-size: contain;
+    overflow: hidden;
+}
+#bluecar {
+    height: 80px;
+    width: 60px;
+    /* background-color: black; */
+    position: relative;
+    top: 0;
+    left: 54px;
+    /* left: 108px; */
+    /* left: 216px; */
+    /* left: 54px; */
+    
+    text-align: right;
+    animation: move 1.5s linear  infinite;
+}
+
+#redcar {
+    height: 80px;
+    width: 80px;
+    /* background-color: red; */
+    position: relative;
+    top: 285px;
+    left: 108px;
+    text-align: center;
+}
+#result {
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+    /* background-color: black; */
+    border: cornflowerblue;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+
+}
+.rs{
+    padding-top: 200px;
+}
+#result h1{
+    color: red;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+#result p{
+    color: seagreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#btn {
+    color: rgb(42, 195, 206);
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+#btn:hover{
+    background-color: white;
+    color: yellowgreen;
+    cursor: pointer;
+}
+@keyframes move {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 501px;
+    }
+}
